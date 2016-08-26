@@ -37,20 +37,20 @@ public class SimulatedBowling {
 	int Total = 0;
 	int gameTotal = 0;
 
-			System.out.printf("Frames   1    \t 2    \t 3    \t 4    \t 5    \t 6    \t 7    \t 8    \t 9   \t 10    Total\n");
+			System.out.printf("Frames       1   2   3   4   5   6   7   8   9  10  Total\n");
 	for(int game = 0; game < 3; game++) {
-		System.out.printf("Game %d   ", game+1);
+		System.out.printf("Game %2d   ", game+1);
 		for (int frame = 0; frame < 10; frame++) {
 			//bowlingScores[game][frame] = bowlOneFrame();
-			System.out.printf(bowlingScores[game][frame] +  " \t ");
+			System.out.printf("%4d", bowlingScores[game][frame]);
 			gameTotal += bowlingScores[game][frame];
 		}
-		System.out.printf("%d", gameTotal);
+		System.out.printf("  %3d", gameTotal);
 		Total += gameTotal;
 		gameTotal = 0;
 		System.out.printf("\n");
 	}
-	System.out.printf("Total Series  \t  \t  \t  \t  \t  \t  \t  \t \t \t %d\n", Total);
+	System.out.printf("Total Series                                        %d\n", Total);
 		
 }
 }
