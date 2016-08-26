@@ -45,12 +45,12 @@ public class SimulatedBowling {
 			System.out.printf("%4d", bowlingScores[game][frame]);
 			gameTotal += bowlingScores[game][frame];
 		}
-		System.out.printf("  %3d", gameTotal);
+		System.out.printf("    %3d", gameTotal);
 		Total += gameTotal;
 		gameTotal = 0;
 		System.out.printf("\n");
 	}
-	System.out.printf("Total Series                                        %d\n", Total);
+	System.out.printf("Total Series                                          %d\n", Total);
 		
 }
 }
